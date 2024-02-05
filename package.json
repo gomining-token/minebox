@@ -1,0 +1,36 @@
+{
+  "name": "minebox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "goerli:deploy": "npx hardhat run scripts/create-the-mine-box.ts --network goerli",
+    "bsc-testnet:deploy": "npx hardhat run scripts/create-the-mine-box.ts --network bscTestnet",
+    "bsc-mainnet:deploy": "npx hardhat run scripts/create-the-mine-box.ts --network bscMainnet",
+    "mainnet:deploy": "npx hardhat run scripts/create-the-mine-box.ts --network mainnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomining-token/minebox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomining-token/minebox/issues"
+  },
+  "homepage": "https://github.com/gomining-token/minebox#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/contracts-upgradeable": "^5.0.1",
+    "@openzeppelin/hardhat-upgrades": "^3.0.2",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.4"
+  }
+}
